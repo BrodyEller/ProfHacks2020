@@ -27,9 +27,10 @@ public class Counter : MonoBehaviour
         if(minutes < 4)
             timeText.color = Color.red;
 
-         if (timeLeft < 0)
-             timeText.text = "Game Over!";
-
-        timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        if (timeLeft < 0)
+            timeText.text = "Game Over!";
+        else 
+            timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 }
+
