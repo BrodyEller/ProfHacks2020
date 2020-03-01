@@ -95,9 +95,15 @@ public class rhythm_controller : MonoBehaviour
 	void noteHit() {
 		transform.GetChild(3).GetComponent<UnityEngine.UI.Slider>().value += (float)1 / notesToWin;
 		GetComponents<AudioSource>()[1].PlayOneShot(noteHitSound, 1.0f);
+		if(transform.GetChild(3).GetComponent<UnityEngine.UI.Slider>().value >= 1) {
+			UnityEngine.SceneManagement.SceneManager.LoadScene("win_scene");
+		}
 	}
 	
 	void noteMissed() {
 		transform.GetChild(3).GetComponent<UnityEngine.UI.Slider>().value -= (float)1 / notesToWin;
+		if(transform.GetChild(3).GetComponent<UnityEngine.UI.Slider>().value <= 0) {
+			UnityEngine.SceneManagement.SceneManager.LoadScene("lose_scene");
+		}
 	}
 }
