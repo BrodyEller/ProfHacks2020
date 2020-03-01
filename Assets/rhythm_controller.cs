@@ -64,10 +64,10 @@ public class rhythm_controller : MonoBehaviour
 		
 			GameObject newNote = Instantiate(note, transform.position, transform.rotation);
 			newNote.transform.SetParent(transform.GetChild(row));
-			newNote.transform.localPosition = new Vector3(1600, 0, 0);
+			newNote.transform.localPosition = new Vector3(800, 0, 0);
 		
 			note_controller newNoteScript = newNote.GetComponent<note_controller>();
-			newNoteScript.SetTarget(new Vector3(-1600, 0, 0), hitTime * 4 * 8);
+			newNoteScript.SetTarget(new Vector3(-800, 0, 0), hitTime * 4 * 4);
 			newNoteScript.noteHit.AddListener(noteHit);
 			newNoteScript.noteMissed.AddListener(noteMissed);
 			newNoteScript.wrongNotePressed.AddListener(noteMissed);
