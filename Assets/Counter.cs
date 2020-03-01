@@ -11,7 +11,7 @@ public class Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeLeft = 31;
+        timeLeft = 231;
         timeText.color = Color.green;
     }
 
