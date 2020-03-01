@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 1
+        }, 
+        "analytics_service": {
+          "status": 0
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "941731941024-62rk2h4sa6ovn575ddm6fhjd1gpp67k1.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfrqozJOoLRwhZC7Nvo-_v5EUlWVhwcz8"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:941731941024:ios:7a0bc6df6669e3b2b5d7c5", 
+        "android_client_info": {
+          "package_name": "com.google.firebase.game"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "game-3289b.appspot.com", 
+    "project_id": "game-3289b", 
+    "firebase_url": "https://game-3289b.firebaseio.com", 
+    "project_number": "941731941024"
+  }
+}
