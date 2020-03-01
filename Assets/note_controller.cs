@@ -46,7 +46,7 @@ public class note_controller : MonoBehaviour
 		}
 		
 		// Destroy Object if User Hits Note
-		if(transform.localPosition.x < 50 && transform.localPosition.x > -50 && Input.anyKey) {
+		if(transform.localPosition.x < 60 && transform.localPosition.x > -60 && Input.anyKey) {
 			if(Input.GetKeyDown(key)) {
 				noteHit.Invoke();
 				Destroy(gameObject);
